@@ -8,8 +8,8 @@ const promiseOutput = async (emosi) => {
   let result = 0;
   combined.map((t1) => {
     t1.hasil === emosi && (result += 1);
-    return result;
-  })
+  });
+  return result;
 };
 
 module.exports = {
