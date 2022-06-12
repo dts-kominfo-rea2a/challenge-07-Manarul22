@@ -1,7 +1,7 @@
 const { promiseTheaterIXX, promiseTheaterVGC } = require("./external.js");
 
 // TODO: Buat fungsi promiseOutput sesuai ketentuan readme
-const promiseOutput = (emosi) => {
+const promiseOutput = async (emosi) => {
   let t1 = await promiseTheaterIXX();
   let t2 = await promiseTheaterVGC();
   let combined = t1.concat(t2);
